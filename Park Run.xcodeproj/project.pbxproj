@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB0EA5DC231F2EAE002DA7BB /* ListViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0EA5DB231F2EAE002DA7BB /* ListViews.swift */; };
+		CB0EA5DE231F4430002DA7BB /* Runners.json in Resources */ = {isa = PBXBuildFile; fileRef = CB0EA5DD231F4430002DA7BB /* Runners.json */; };
+		CB51EC23231E4C3600EDC72E /* SourceCodePro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB51EC22231E4C3600EDC72E /* SourceCodePro-Bold.ttf */; };
+		CB51EC24231E4C3600EDC72E /* SourceCodePro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB51EC22231E4C3600EDC72E /* SourceCodePro-Bold.ttf */; };
+		CB51EC25231E4C3600EDC72E /* SourceCodePro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB51EC22231E4C3600EDC72E /* SourceCodePro-Bold.ttf */; };
+		CB51EC27231E4CB700EDC72E /* RunnerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51EC26231E4CB700EDC72E /* RunnerModels.swift */; };
+		CB6EC26C231CD10B00709194 /* RunnerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EC26B231CD10B00709194 /* RunnerViews.swift */; };
+		CB6EC26E231CE23900709194 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EC26D231CE23900709194 /* ListController.swift */; };
+		CB89760D231CBAC60065E252 /* Park Run WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CB89760C231CBAC60065E252 /* Park Run WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB897613231CBAC60065E252 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB897611231CBAC60065E252 /* Interface.storyboard */; };
+		CB897615231CBAC70065E252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB897614231CBAC70065E252 /* Assets.xcassets */; };
+		CB89761C231CBAC70065E252 /* Park Run WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB89761B231CBAC70065E252 /* Park Run WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB897625231CBAC70065E252 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB897624231CBAC70065E252 /* ExtensionDelegate.swift */; };
+		CB897627231CBAC70065E252 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB897626231CBAC70065E252 /* NotificationController.swift */; };
+		CB897629231CBAC70065E252 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB897628231CBAC70065E252 /* NotificationView.swift */; };
+		CB89762B231CBAC80065E252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB89762A231CBAC80065E252 /* Assets.xcassets */; };
+		CB89762E231CBAC80065E252 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB89762D231CBAC80065E252 /* Preview Assets.xcassets */; };
+		CBAB13A3231F65C40046B10E /* NumberViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB13A2231F65C40046B10E /* NumberViews.swift */; };
+		CBF8D8D42321C0C5005479B8 /* UserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF8D8D32321C0C5005479B8 /* UserDelegate.swift */; };
+		CBFAAF95231CF60500CBAB7E /* BarcodeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFAAF94231CF60500CBAB7E /* BarcodeViews.swift */; };
+		CBFAAF98231D0D0F00CBAB7E /* BarcodeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFAAF97231D0D0F00CBAB7E /* BarcodeModels.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB89760E231CBAC60065E252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB897602231CBAC60065E252 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB89760B231CBAC60065E252;
+			remoteInfo = "Park Run WatchKit App";
+		};
+		CB89761D231CBAC70065E252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB897602231CBAC60065E252 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB89761A231CBAC70065E252;
+			remoteInfo = "Park Run WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB897636231CBAC80065E252 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB89761C231CBAC70065E252 /* Park Run WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB89763A231CBAC80065E252 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CB89760D231CBAC60065E252 /* Park Run WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CB0EA5DB231F2EAE002DA7BB /* ListViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViews.swift; sourceTree = "<group>"; };
+		CB0EA5DD231F4430002DA7BB /* Runners.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Runners.json; sourceTree = "<group>"; };
+		CB51EC22231E4C3600EDC72E /* SourceCodePro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Bold.ttf"; sourceTree = "<group>"; };
+		CB51EC26231E4CB700EDC72E /* RunnerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerModels.swift; sourceTree = "<group>"; };
+		CB6EC26B231CD10B00709194 /* RunnerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerViews.swift; sourceTree = "<group>"; };
+		CB6EC26D231CE23900709194 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		CB897608231CBAC60065E252 /* Park Run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Run.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB89760C231CBAC60065E252 /* Park Run WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park Run WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB897612231CBAC60065E252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CB897614231CBAC70065E252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB897616231CBAC70065E252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB89761B231CBAC70065E252 /* Park Run WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Park Run WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB897624231CBAC70065E252 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CB897626231CBAC70065E252 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CB897628231CBAC70065E252 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		CB89762A231CBAC80065E252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB89762D231CBAC80065E252 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB89762F231CBAC80065E252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB897630231CBAC80065E252 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CBAB13A2231F65C40046B10E /* NumberViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViews.swift; sourceTree = "<group>"; };
+		CBF8D8D32321C0C5005479B8 /* UserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDelegate.swift; sourceTree = "<group>"; };
+		CBFAAF94231CF60500CBAB7E /* BarcodeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViews.swift; sourceTree = "<group>"; };
+		CBFAAF97231D0D0F00CBAB7E /* BarcodeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeModels.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B76C04CD2E4AE78B40FCE10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB897618231CBAC70065E252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4B7155EE481E4F3CEB30DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB51EC20231E4BCD00EDC72E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB51EC21231E4BE500EDC72E /* Fonts */,
+				CB89762A231CBAC80065E252 /* Assets.xcassets */,
+				CB0EA5DD231F4430002DA7BB /* Runners.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB51EC21231E4BE500EDC72E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CB51EC22231E4C3600EDC72E /* SourceCodePro-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CB6EC26F231CE23E00709194 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB6EC26D231CE23900709194 /* ListController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CB6EC270231CE2D800709194 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBFAAF94231CF60500CBAB7E /* BarcodeViews.swift */,
+				CB6EC26B231CD10B00709194 /* RunnerViews.swift */,
+				CB0EA5DB231F2EAE002DA7BB /* ListViews.swift */,
+				CBAB13A2231F65C40046B10E /* NumberViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB897601231CBAC60065E252 = {
+			isa = PBXGroup;
+			children = (
+				CB897610231CBAC60065E252 /* Park Run WatchKit App */,
+				CB89761F231CBAC70065E252 /* Park Run WatchKit Extension */,
+				CB897609231CBAC60065E252 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB897609231CBAC60065E252 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB897608231CBAC60065E252 /* Park Run.app */,
+				CB89760C231CBAC60065E252 /* Park Run WatchKit App.app */,
+				CB89761B231CBAC70065E252 /* Park Run WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB897610231CBAC60065E252 /* Park Run WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CB897611231CBAC60065E252 /* Interface.storyboard */,
+				CB897614231CBAC70065E252 /* Assets.xcassets */,
+				CB897616231CBAC70065E252 /* Info.plist */,
+			);
+			path = "Park Run WatchKit App";
+			sourceTree = "<group>";
+		};
+		CB89761F231CBAC70065E252 /* Park Run WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CBF8D8D22321C0B3005479B8 /* Protocols */,
+				CB51EC20231E4BCD00EDC72E /* Resources */,
+				CBFAAF96231D0CEF00CBAB7E /* Models */,
+				CB6EC26F231CE23E00709194 /* Controllers */,
+				CB6EC270231CE2D800709194 /* Views */,
+				CB897624231CBAC70065E252 /* ExtensionDelegate.swift */,
+				CB897626231CBAC70065E252 /* NotificationController.swift */,
+				CB897628231CBAC70065E252 /* NotificationView.swift */,
+				CB89762F231CBAC80065E252 /* Info.plist */,
+				CB897630231CBAC80065E252 /* PushNotificationPayload.apns */,
+				CB89762C231CBAC80065E252 /* Preview Content */,
+			);
+			path = "Park Run WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CB89762C231CBAC80065E252 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB89762D231CBAC80065E252 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBF8D8D22321C0B3005479B8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CBF8D8D32321C0C5005479B8 /* UserDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CBFAAF96231D0CEF00CBAB7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBFAAF97231D0D0F00CBAB7E /* BarcodeModels.swift */,
+				CB51EC26231E4CB700EDC72E /* RunnerModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB897607231CBAC60065E252 /* Park Run */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB89763B231CBAC80065E252 /* Build configuration list for PBXNativeTarget "Park Run" */;
+			buildPhases = (
+				CB897606231CBAC60065E252 /* Resources */,
+				CB89763A231CBAC80065E252 /* Embed Watch Content */,
+				9B76C04CD2E4AE78B40FCE10 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB89760F231CBAC60065E252 /* PBXTargetDependency */,
+			);
+			name = "Park Run";
+			productName = "Park Run";
+			productReference = CB897608231CBAC60065E252 /* Park Run.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CB89760B231CBAC60065E252 /* Park Run WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB897637231CBAC80065E252 /* Build configuration list for PBXNativeTarget "Park Run WatchKit App" */;
+			buildPhases = (
+				CB89760A231CBAC60065E252 /* Resources */,
+				CB897636231CBAC80065E252 /* Embed App Extensions */,
+				DB4B7155EE481E4F3CEB30DC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB89761E231CBAC70065E252 /* PBXTargetDependency */,
+			);
+			name = "Park Run WatchKit App";
+			productName = "Park Run WatchKit App";
+			productReference = CB89760C231CBAC60065E252 /* Park Run WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CB89761A231CBAC70065E252 /* Park Run WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB897633231CBAC80065E252 /* Build configuration list for PBXNativeTarget "Park Run WatchKit Extension" */;
+			buildPhases = (
+				CB897617231CBAC70065E252 /* Sources */,
+				CB897618231CBAC70065E252 /* Frameworks */,
+				CB897619231CBAC70065E252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Park Run WatchKit Extension";
+			productName = "Park Run WatchKit Extension";
+			productReference = CB89761B231CBAC70065E252 /* Park Run WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB897602231CBAC60065E252 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Schacher;
+				TargetAttributes = {
+					CB897607231CBAC60065E252 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					CB89760B231CBAC60065E252 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					CB89761A231CBAC70065E252 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = CB897605231CBAC60065E252 /* Build configuration list for PBXProject "Park Run" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB897601231CBAC60065E252;
+			productRefGroup = CB897609231CBAC60065E252 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB897607231CBAC60065E252 /* Park Run */,
+				CB89760B231CBAC60065E252 /* Park Run WatchKit App */,
+				CB89761A231CBAC70065E252 /* Park Run WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB897606231CBAC60065E252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB51EC23231E4C3600EDC72E /* SourceCodePro-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB89760A231CBAC60065E252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB51EC24231E4C3600EDC72E /* SourceCodePro-Bold.ttf in Resources */,
+				CB897615231CBAC70065E252 /* Assets.xcassets in Resources */,
+				CB897613231CBAC60065E252 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB897619231CBAC70065E252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB51EC25231E4C3600EDC72E /* SourceCodePro-Bold.ttf in Resources */,
+				CB0EA5DE231F4430002DA7BB /* Runners.json in Resources */,
+				CB89762E231CBAC80065E252 /* Preview Assets.xcassets in Resources */,
+				CB89762B231CBAC80065E252 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB897617231CBAC70065E252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6EC26C231CD10B00709194 /* RunnerViews.swift in Sources */,
+				CB0EA5DC231F2EAE002DA7BB /* ListViews.swift in Sources */,
+				CBFAAF95231CF60500CBAB7E /* BarcodeViews.swift in Sources */,
+				CB897627231CBAC70065E252 /* NotificationController.swift in Sources */,
+				CB6EC26E231CE23900709194 /* ListController.swift in Sources */,
+				CB51EC27231E4CB700EDC72E /* RunnerModels.swift in Sources */,
+				CBF8D8D42321C0C5005479B8 /* UserDelegate.swift in Sources */,
+				CBFAAF98231D0D0F00CBAB7E /* BarcodeModels.swift in Sources */,
+				CB897625231CBAC70065E252 /* ExtensionDelegate.swift in Sources */,
+				CB897629231CBAC70065E252 /* NotificationView.swift in Sources */,
+				CBAB13A3231F65C40046B10E /* NumberViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB89760F231CBAC60065E252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB89760B231CBAC60065E252 /* Park Run WatchKit App */;
+			targetProxy = CB89760E231CBAC60065E252 /* PBXContainerItemProxy */;
+		};
+		CB89761E231CBAC70065E252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB89761A231CBAC70065E252 /* Park Run WatchKit Extension */;
+			targetProxy = CB89761D231CBAC70065E252 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB897611231CBAC60065E252 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB897612231CBAC60065E252 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB897631231CBAC80065E252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB897632231CBAC80065E252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB897634231CBAC80065E252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Park Run WatchKit Extension\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Park Run WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Schacher.Park-Run.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		CB897635231CBAC80065E252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Park Run WatchKit Extension\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Park Run WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Schacher.Park-Run.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		CB897638231CBAC80065E252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				IBSC_MODULE = Park_Run_WatchKit_Extension;
+				INFOPLIST_FILE = "Park Run WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Schacher.Park-Run.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		CB897639231CBAC80065E252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				IBSC_MODULE = Park_Run_WatchKit_Extension;
+				INFOPLIST_FILE = "Park Run WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Schacher.Park-Run.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		CB89763C231CBAC80065E252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Schacher.Park-Run";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CB89763D231CBAC80065E252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Schacher.Park-Run";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB897605231CBAC60065E252 /* Build configuration list for PBXProject "Park Run" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB897631231CBAC80065E252 /* Debug */,
+				CB897632231CBAC80065E252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB897633231CBAC80065E252 /* Build configuration list for PBXNativeTarget "Park Run WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB897634231CBAC80065E252 /* Debug */,
+				CB897635231CBAC80065E252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB897637231CBAC80065E252 /* Build configuration list for PBXNativeTarget "Park Run WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB897638231CBAC80065E252 /* Debug */,
+				CB897639231CBAC80065E252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB89763B231CBAC80065E252 /* Build configuration list for PBXNativeTarget "Park Run" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB89763C231CBAC80065E252 /* Debug */,
+				CB89763D231CBAC80065E252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB897602231CBAC60065E252 /* Project object */;
+}
